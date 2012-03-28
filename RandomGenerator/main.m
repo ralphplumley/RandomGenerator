@@ -2,21 +2,23 @@
 //  main.m
 //  RandomGenerator
 //
-//  Created by Ralph Plumley on 3/28/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Ralph Tomio on 3/28/12.
 //
 
 #import <Foundation/Foundation.h>
+#import "MTwister.h"
 
 int main (int argc, const char * argv[])
 {
-
-    @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+    MTwister* randTwist = [ [ MTwister alloc ] init ];
+    
+    for(NSInteger i = 0; i < 10; i++)
+    {
+        [ randTwist initializeGenerator: i ];
+        NSLog(@"Your random # is %ld\n", [ randTwist extractNumber ]);
     }
+    [ randTwist release ];
     return 0;
 }
+
 

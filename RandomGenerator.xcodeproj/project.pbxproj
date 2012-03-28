@@ -10,6 +10,7 @@
 		C7E1D39F152375A80048389A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E1D39E152375A80048389A /* Foundation.framework */; };
 		C7E1D3A2152375A80048389A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E1D3A1152375A80048389A /* main.m */; };
 		C7E1D3A6152375A80048389A /* RandomGenerator.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7E1D3A5152375A80048389A /* RandomGenerator.1 */; };
+		C7E1D3AE152376010048389A /* MTwister.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E1D3AD152376010048389A /* MTwister.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +30,10 @@
 		C7E1D39A152375A80048389A /* RandomGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E1D39E152375A80048389A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7E1D3A1152375A80048389A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C7E1D3A4152375A80048389A /* RandomGenerator-Prefix.pch */ = {isa = PBXFileReference; path = "RandomGenerator-Prefix.pch"; sourceTree = "<group>"; };
+		C7E1D3A4152375A80048389A /* RandomGenerator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomGenerator-Prefix.pch"; sourceTree = "<group>"; };
 		C7E1D3A5152375A80048389A /* RandomGenerator.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RandomGenerator.1; sourceTree = "<group>"; };
+		C7E1D3AC152376010048389A /* MTwister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTwister.h; sourceTree = "<group>"; };
+		C7E1D3AD152376010048389A /* MTwister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTwister.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				C7E1D3A1152375A80048389A /* main.m */,
+				C7E1D3AC152376010048389A /* MTwister.h */,
+				C7E1D3AD152376010048389A /* MTwister.m */,
 				C7E1D3A5152375A80048389A /* RandomGenerator.1 */,
 				C7E1D3A3152375A80048389A /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7E1D3A2152375A80048389A /* main.m in Sources */,
+				C7E1D3AE152376010048389A /* MTwister.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
